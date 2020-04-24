@@ -1,0 +1,8 @@
+---
+crio_packages:
+  - cri-o
+  - cri-tools
+
+crio_conmon: /usr/libexec/crio/conmon
+crio_runc_path: "/usr/bin/runc"
+crio_seccomp_profile: ""
