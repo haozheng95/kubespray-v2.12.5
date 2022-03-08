@@ -104,7 +104,9 @@ resource "aws_security_group" "kubernetes" {
   tags = "${merge(var.default_tags, map(
     "Name", "kubernetes-${var.aws_cluster_name}-securitygroup"
   ))}"
+  description = "<write as you like>"
 }
+
 
 resource "aws_security_group_rule" "allow-all-ingress" {
   type              = "ingress"
